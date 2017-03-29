@@ -23,8 +23,9 @@ Within a map frame, users will be able to search for an issue of concern such as
 - [ ] Vapor Backend: Support local info and reporting services from a variety of localities (other cities and areas besides NYC)
 - [ ] iOS App: Model and display areas of varying warning concentration in an overlay over the map.
 - [ ] iOS App: Different map overlays with a variety of data views.
-- [ ] iOS App: *"Here Thar Be" view* Old timey map with pirate aesthetic marking the most common complaint by geographical area with images
+- [ ] iOS App: **"Here Thar Be" view** Old timey map with pirate aesthetic marking the most common complaint by geographical area with images
 - [ ] iOS App: Beautify UI with custom icons and image based UI.
 - [ ] Both ends: Integration with social media
+- [ ] Both ends: Allow the user to add a photo along with warnings
 - [ ] iOS App: Ongoing support and maintenance across iOS and Swift updates post-release
 - [ ] Web and Android clients to expand userbase and datasets
