@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var dataOptionsBar: UITabBar!
+    @IBOutlet weak var overlayMenuButton: UIButton!
+    @IBOutlet weak var tagSearchButton: UIButton!
+    @IBOutlet weak var addWarningButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.title = "HereTharBe"
+        
     }
 
     override func didReceiveMemoryWarning() {
