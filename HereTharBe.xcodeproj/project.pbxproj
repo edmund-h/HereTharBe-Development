@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		883D5D811E8ABE4A009EC3D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5D801E8ABE4A009EC3D0 /* AppDelegate.swift */; };
-		883D5D831E8ABE4A009EC3D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5D821E8ABE4A009EC3D0 /* ViewController.swift */; };
+		883D5D831E8ABE4A009EC3D0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5D821E8ABE4A009EC3D0 /* MapViewController.swift */; };
 		883D5D861E8ABE4A009EC3D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883D5D841E8ABE4A009EC3D0 /* Main.storyboard */; };
 		883D5D881E8ABE4A009EC3D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883D5D871E8ABE4A009EC3D0 /* Assets.xcassets */; };
 		883D5D8B1E8ABE4A009EC3D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883D5D891E8ABE4A009EC3D0 /* LaunchScreen.storyboard */; };
 		883D5D961E8ABE4A009EC3D0 /* HereTharBeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5D951E8ABE4A009EC3D0 /* HereTharBeTests.swift */; };
 		883D5DA11E8ABE4A009EC3D0 /* HereTharBeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5DA01E8ABE4A009EC3D0 /* HereTharBeUITests.swift */; };
 		883D5DAF1E8ADE70009EC3D0 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5DAE1E8ADE70009EC3D0 /* Secrets.swift */; };
+		88D3E8A31E8D54C80005D42F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3E8A21E8D54C80005D42F /* MapView.swift */; };
+		88D3E8A51E8D761A0005D42F /* FunctionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3E8A41E8D761A0005D42F /* FunctionsBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		883D5D7D1E8ABE4A009EC3D0 /* HereTharBe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HereTharBe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883D5D801E8ABE4A009EC3D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		883D5D821E8ABE4A009EC3D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		883D5D821E8ABE4A009EC3D0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		883D5D851E8ABE4A009EC3D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		883D5D871E8ABE4A009EC3D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		883D5D8A1E8ABE4A009EC3D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		883D5DA01E8ABE4A009EC3D0 /* HereTharBeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HereTharBeUITests.swift; sourceTree = "<group>"; };
 		883D5DA21E8ABE4A009EC3D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		883D5DAE1E8ADE70009EC3D0 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		88D3E8A21E8D54C80005D42F /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		88D3E8A41E8D761A0005D42F /* FunctionsBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				883D5D801E8ABE4A009EC3D0 /* AppDelegate.swift */,
-				883D5D821E8ABE4A009EC3D0 /* ViewController.swift */,
+				883D5D821E8ABE4A009EC3D0 /* MapViewController.swift */,
+				88D3E8A21E8D54C80005D42F /* MapView.swift */,
+				88D3E8A41E8D761A0005D42F /* FunctionsBar.swift */,
 				883D5D841E8ABE4A009EC3D0 /* Main.storyboard */,
 				883D5D871E8ABE4A009EC3D0 /* Assets.xcassets */,
 				883D5D891E8ABE4A009EC3D0 /* LaunchScreen.storyboard */,
@@ -265,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883D5D831E8ABE4A009EC3D0 /* ViewController.swift in Sources */,
+				883D5D831E8ABE4A009EC3D0 /* MapViewController.swift in Sources */,
 				883D5DAF1E8ADE70009EC3D0 /* Secrets.swift in Sources */,
+				88D3E8A51E8D761A0005D42F /* FunctionsBar.swift in Sources */,
+				88D3E8A31E8D54C80005D42F /* MapView.swift in Sources */,
 				883D5D811E8ABE4A009EC3D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +528,7 @@
 				883D5DA71E8ABE4A009EC3D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		883D5DA81E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereTharBeTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +537,7 @@
 				883D5DAA1E8ABE4A009EC3D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		883D5DAB1E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereTharBeUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +546,7 @@
 				883D5DAD1E8ABE4A009EC3D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
