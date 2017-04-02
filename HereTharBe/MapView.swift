@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import Foundation
 
 class MapView: UIView {
     
@@ -73,50 +74,35 @@ class MapView: UIView {
         
         self.addSubview(tagSearchButton)
         tagSearchButton.translatesAutoresizingMaskIntoConstraints = false
-        tagSearchButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        tagSearchButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
-        tagSearchButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
-        tagSearchButton.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -20).isActive = true
+        constrainToLowerRightButtonSlot(item: tagSearchButton)
         tagSearchButton.backgroundColor = UIColor.piratePurple
         tagSearchButton.setTitle("T", for: .normal)
         self.insertSubview(tagSearchButton, aboveSubview: mapView)
         
         self.addSubview(addWarningButton)
         addWarningButton.translatesAutoresizingMaskIntoConstraints = false
-        addWarningButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        addWarningButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
-        addWarningButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
-        addWarningButton.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -75).isActive = true
+        constrainToUpperRightButtonSlot(item: addWarningButton)
         addWarningButton.backgroundColor = UIColor.piratePurple
         addWarningButton.setTitle("W", for: .normal)
         self.insertSubview(tagSearchButton, aboveSubview: mapView)
         
         self.addSubview(setLocationButton)
         setLocationButton.translatesAutoresizingMaskIntoConstraints = false
-        setLocationButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        setLocationButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
-        setLocationButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
-        setLocationButton.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -75).isActive = true
+        constrainToUpperLeftButtonSlot(item: setLocationButton)
         setLocationButton.backgroundColor = UIColor.piratePurple
         setLocationButton.setTitle("L", for: .normal)
         self.insertSubview(setLocationButton, aboveSubview: mapView)
         
         self.addSubview(centerMapButton)
         centerMapButton.translatesAutoresizingMaskIntoConstraints = false
-        centerMapButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        centerMapButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
-        centerMapButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
-        centerMapButton.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -20).isActive = true
+        constrainToLowerLeftButtonSlot(item: centerMapButton)
         centerMapButton.backgroundColor = UIColor.piratePurple
         centerMapButton.setTitle("C", for: .normal)
         self.insertSubview(centerMapButton, aboveSubview: mapView)
         
         self.addSubview(textBar)
         textBar.translatesAutoresizingMaskIntoConstraints = false
-        textBar.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        textBar.leadingAnchor.constraint(equalTo: centerMapButton.trailingAnchor, constant: 20).isActive = true
-        textBar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -75).isActive = true
-        textBar.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -20).isActive = true
+        constrainToActiveBarSlot(item: textBar)
         textBar.backgroundColor = UIColor.piratePurple
         self.insertSubview(textBar, aboveSubview: mapView)
     }
@@ -130,6 +116,68 @@ class MapView: UIView {
 
 }
 
+
+// MARK: Animations
+extension MapView{
+    func activateAddWarning() {
+        // this animation will bring the addWarning button down while sliding the tagSearch button out of view, then slide out the textBar from underneath its location
+    }
+    
+    func activateSetLocation(){
+        //this animation will bring the setLocation button down while sliding the centerMap button out of view, then slide out the textBar from underneath its location
+    }
+    
+    func slideOutSearchBar(){
+        //this animation will govern textBar slideout. The textbar will start with the same dimensions as, and hidden behind, the button activating it. Then, the bar will extend in size until it is 7/10 of the screen size and then slide out until it is centered
+    }
+    
+    
+}
+
+// MARK: Constraints as positions
+
+extension MapView{
+    func constrainToUpperRightButtonSlot(item: UIView) {
+        item.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        item.widthAnchor.constraint(equalToConstant: 35).isActive = true
+        item.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
+        item.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -75).isActive = true
+        
+    }
+    
+    func constrainToLowerRightButtonSlot(item: UIView) {
+        item.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        item.widthAnchor.constraint(equalToConstant: 35).isActive = true
+        item.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
+        item.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -20).isActive = true
+        
+    }
+    
+    func constrainToUpperLeftButtonSlot(item: UIView) {
+        item.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        item.widthAnchor.constraint(equalToConstant: 35).isActive = true
+        item.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
+        item.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -75).isActive = true
+        
+    }
+    
+    func constrainToLowerLeftButtonSlot(item: UIView) {
+        item.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        item.widthAnchor.constraint(equalToConstant: 35).isActive = true
+        item.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
+        item.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -20).isActive = true
+    }
+    
+    func constrainToActiveBarSlot(item:UIView) {
+        item.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        item.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        item.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.7).isActive = true
+        item.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -20).isActive = true
+    }
+    
+}
+
 extension UIColor{
     static let piratePurple = UIColor(red: 249/255, green: 198/255, blue: 249/255, alpha: 1)
 }
+
