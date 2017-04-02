@@ -14,13 +14,12 @@ class MapView: UIView {
     lazy var dataOptionsBar = UITabBar()
     lazy var mapView = MKMapView()
     
-    lazy var overlayMenuButton = UIButton()
     lazy var tagSearchButton = UIButton()
     lazy var addWarningButton = UIButton()
+    lazy var setLocationButton = UIButton()
     lazy var centerMapButton = UIButton()
     
-    lazy var functionsBar = UIView()
-    
+    lazy var textBar = UITextField()
 
     
 //    override func draw(_ rect: CGRect) {
@@ -40,13 +39,23 @@ class MapView: UIView {
     
     func commonInit() {
         self.backgroundColor = UIColor.green
+        
+        
+        
         self.addSubview(dataOptionsBar)
         dataOptionsBar.translatesAutoresizingMaskIntoConstraints = false
-        dataOptionsBar.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        dataOptionsBar.heightAnchor.constraint(equalToConstant: 35).isActive = true
         dataOptionsBar.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
         dataOptionsBar.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         dataOptionsBar.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-    
+        //had to build out an extra UIView to constrain the CV's frame
+        
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsetsMake(7.5, 7.5, 7.5, 7.5)
+        layout.itemSize = CGSize(width: 35, height: 35)
+        layout.scrollDirection = .horizontal
+
         
         self.addSubview(mapView)
         mapView.translatesAutoresizingMaskIntoConstraints = false
@@ -69,6 +78,7 @@ class MapView: UIView {
         tagSearchButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
         tagSearchButton.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -20).isActive = true
         tagSearchButton.backgroundColor = UIColor.piratePurple
+        tagSearchButton.setTitle("T", for: .normal)
         self.insertSubview(tagSearchButton, aboveSubview: mapView)
         
         self.addSubview(addWarningButton)
@@ -78,16 +88,18 @@ class MapView: UIView {
         addWarningButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
         addWarningButton.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -75).isActive = true
         addWarningButton.backgroundColor = UIColor.piratePurple
+        addWarningButton.setTitle("W", for: .normal)
         self.insertSubview(tagSearchButton, aboveSubview: mapView)
         
-        self.addSubview(overlayMenuButton)
-        overlayMenuButton.translatesAutoresizingMaskIntoConstraints = false
-        overlayMenuButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        overlayMenuButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
-        overlayMenuButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
-        overlayMenuButton.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -20).isActive = true
-        overlayMenuButton.backgroundColor = UIColor.piratePurple
-        self.insertSubview(overlayMenuButton, aboveSubview: mapView)
+        self.addSubview(setLocationButton)
+        setLocationButton.translatesAutoresizingMaskIntoConstraints = false
+        setLocationButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        setLocationButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
+        setLocationButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
+        setLocationButton.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -75).isActive = true
+        setLocationButton.backgroundColor = UIColor.piratePurple
+        setLocationButton.setTitle("L", for: .normal)
+        self.insertSubview(setLocationButton, aboveSubview: mapView)
         
         self.addSubview(centerMapButton)
         centerMapButton.translatesAutoresizingMaskIntoConstraints = false
@@ -96,12 +108,20 @@ class MapView: UIView {
         centerMapButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
         centerMapButton.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -20).isActive = true
         centerMapButton.backgroundColor = UIColor.piratePurple
+        centerMapButton.setTitle("C", for: .normal)
         self.insertSubview(centerMapButton, aboveSubview: mapView)
         
-        
+        self.addSubview(textBar)
+        textBar.translatesAutoresizingMaskIntoConstraints = false
+        textBar.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        textBar.leadingAnchor.constraint(equalTo: centerMapButton.trailingAnchor, constant: 20).isActive = true
+        textBar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -75).isActive = true
+        textBar.bottomAnchor.constraint(equalTo: dataOptionsBar.topAnchor, constant: -20).isActive = true
+        textBar.backgroundColor = UIColor.piratePurple
+        self.insertSubview(textBar, aboveSubview: mapView)
     }
     
-
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

@@ -16,7 +16,6 @@
 		883D5DA11E8ABE4A009EC3D0 /* HereTharBeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5DA01E8ABE4A009EC3D0 /* HereTharBeUITests.swift */; };
 		883D5DAF1E8ADE70009EC3D0 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5DAE1E8ADE70009EC3D0 /* Secrets.swift */; };
 		88D3E8A31E8D54C80005D42F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3E8A21E8D54C80005D42F /* MapView.swift */; };
-		88D3E8A51E8D761A0005D42F /* FunctionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3E8A41E8D761A0005D42F /* FunctionsBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		883D5DA21E8ABE4A009EC3D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		883D5DAE1E8ADE70009EC3D0 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		88D3E8A21E8D54C80005D42F /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		88D3E8A41E8D761A0005D42F /* FunctionsBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +104,6 @@
 				883D5D801E8ABE4A009EC3D0 /* AppDelegate.swift */,
 				883D5D821E8ABE4A009EC3D0 /* MapViewController.swift */,
 				88D3E8A21E8D54C80005D42F /* MapView.swift */,
-				88D3E8A41E8D761A0005D42F /* FunctionsBar.swift */,
 				883D5D841E8ABE4A009EC3D0 /* Main.storyboard */,
 				883D5D871E8ABE4A009EC3D0 /* Assets.xcassets */,
 				883D5D891E8ABE4A009EC3D0 /* LaunchScreen.storyboard */,
@@ -273,7 +270,6 @@
 			files = (
 				883D5D831E8ABE4A009EC3D0 /* MapViewController.swift in Sources */,
 				883D5DAF1E8ADE70009EC3D0 /* Secrets.swift in Sources */,
-				88D3E8A51E8D761A0005D42F /* FunctionsBar.swift in Sources */,
 				88D3E8A31E8D54C80005D42F /* MapView.swift in Sources */,
 				883D5D811E8ABE4A009EC3D0 /* AppDelegate.swift in Sources */,
 			);

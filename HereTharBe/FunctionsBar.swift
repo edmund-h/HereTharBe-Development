@@ -10,7 +10,7 @@ import UIKit
 
 class FunctionsBar: UIView {
     
-    lazy var show: barFunction = .none
+    lazy var show: BarType = .none
     
     lazy var textField = UITextField()
     lazy var overlayCollection = UIStackView()
@@ -29,22 +29,24 @@ class FunctionsBar: UIView {
     
     func commonInit(){
         
+        self.addSubview(textField)
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         textField.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         textField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         textField.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         
+        self.addSubview(overlayCollection)
         overlayCollection.translatesAutoresizingMaskIntoConstraints = false
         overlayCollection.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         overlayCollection.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         overlayCollection.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         overlayCollection.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         
-        self.backgroundColor = UIColor.piratePurple
+        self.backgroundColor = UIColor.red
     }
     
-    func setFunction(to setting: barFunction){
+    func setFunction(to setting: BarType){
         switch setting{
         case .none:
             textField.isHidden = true
@@ -79,6 +81,6 @@ class FunctionsBar: UIView {
 
 }
 
-enum barFunction: Int{
+enum BarType: Int{
     case none = 0, location, tag, overlay
 }
