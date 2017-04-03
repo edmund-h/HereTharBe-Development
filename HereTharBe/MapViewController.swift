@@ -11,13 +11,15 @@ import MapKit
 import CoreLocation
 
 class MapViewController: UIViewController {
-    weak var dataOptionsBar: UITabBar!
     lazy var mapContainer: MapView = MapView()
+    weak var dataOptionsBar: UITabBar!
+    weak var centerMapButton: UIButton!
     
     override func loadView() {
         super.loadView()
         self.view = self.mapContainer
         self.mapContainer.mapView.delegate = self
+        self.configureView()
     }
     
     override func viewDidLoad() {
@@ -26,13 +28,25 @@ class MapViewController: UIViewController {
     }
 
     func configureView() {
+        mapContainer.buttons.forEach({$0.addTarget(self, action: #selector(self.getSearchBar), for: .touchUpInside) })
+//        addWarningButton = self.mapContainer.addWarningButton
+//        addWarningButton.addTarget(self, action: #selector(self.getSearchBar),   for: .touchUpInside)
+        
+        self.mapContainer.dataOptionsTab.addTarget(self, action: #selector(self.getDataOptions), for: .touchUpInside)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func getSearchBar(sender: UIButton){
+        self.mapContainer.slideOutActiveBar(view: sender)
+    }
+    
+    func getDataOptions(){
+        self.mapContainer.slideOutOptionsBar()
+    }
 }
 
 extension MapViewController: MKMapViewDelegate {
