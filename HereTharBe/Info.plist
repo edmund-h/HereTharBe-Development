@@ -41,5 +41,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app will use your location to find observations left by others in your area, find related data from local authorities, and upload observations made by you from your location</string>
 </dict>
 </plist>

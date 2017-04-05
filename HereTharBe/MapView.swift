@@ -28,11 +28,6 @@ class MapView: UIView {
     lazy var textBar = UITextField()
     var textBarIsActive = false
     fileprivate var textBarVerticalConstraint = NSLayoutConstraint()
-
-    
-//    override func draw(_ rect: CGRect) {
-//        // Drawing code
-//    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -48,7 +43,6 @@ class MapView: UIView {
     func commonInit() {
         self.backgroundColor = UIColor.green
         self.buttons = [addWarningButton,tagSearchButton,setLocationButton]
-        
         self.addSubview(dataOptionsBar)
         dataOptionsBar.translatesAutoresizingMaskIntoConstraints = false
         dataOptionsBar.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -126,13 +120,6 @@ class MapView: UIView {
         self.insertSubview(textBar, aboveSubview: mapView)
         
     }
-    
-    
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-   
-    */
 
 }
 
@@ -140,7 +127,6 @@ class MapView: UIView {
 // MARK: Animations
 extension MapView{
     func slideOutActiveBar(view: UIView){
-        //this animation will govern textBar slideout. The textbar will start with the same dimensions as, and hidden behind, the button activating it. Then, the bar will extend in size until it is 7/10 of the screen size and then slide out until it is centered
         // for right now it's just going to slide the bar up from under the tab bar
         if textBarIsActive {textBarVerticalConstraint.constant = 100}
         else {textBarVerticalConstraint.constant = -20}

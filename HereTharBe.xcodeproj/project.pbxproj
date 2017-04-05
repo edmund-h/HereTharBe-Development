@@ -15,6 +15,7 @@
 		883D5D961E8ABE4A009EC3D0 /* HereTharBeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5D951E8ABE4A009EC3D0 /* HereTharBeTests.swift */; };
 		883D5DA11E8ABE4A009EC3D0 /* HereTharBeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5DA01E8ABE4A009EC3D0 /* HereTharBeUITests.swift */; };
 		883D5DAF1E8ADE70009EC3D0 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5DAE1E8ADE70009EC3D0 /* Secrets.swift */; };
+		887987DD1E93150600F5C540 /* CoreLocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887987DC1E93150600F5C540 /* CoreLocManager.swift */; };
 		88D3E8A31E8D54C80005D42F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3E8A21E8D54C80005D42F /* MapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		883D5DA01E8ABE4A009EC3D0 /* HereTharBeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HereTharBeUITests.swift; sourceTree = "<group>"; };
 		883D5DA21E8ABE4A009EC3D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		883D5DAE1E8ADE70009EC3D0 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		887987DC1E93150600F5C540 /* CoreLocManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocManager.swift; sourceTree = "<group>"; };
 		88D3E8A21E8D54C80005D42F /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 		883D5D7F1E8ABE4A009EC3D0 /* HereTharBe */ = {
 			isa = PBXGroup;
 			children = (
+				887987DC1E93150600F5C540 /* CoreLocManager.swift */,
 				883D5D801E8ABE4A009EC3D0 /* AppDelegate.swift */,
 				883D5D821E8ABE4A009EC3D0 /* MapViewController.swift */,
 				88D3E8A21E8D54C80005D42F /* MapView.swift */,
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				883D5D831E8ABE4A009EC3D0 /* MapViewController.swift in Sources */,
+				887987DD1E93150600F5C540 /* CoreLocManager.swift in Sources */,
 				883D5DAF1E8ADE70009EC3D0 /* Secrets.swift in Sources */,
 				88D3E8A31E8D54C80005D42F /* MapView.swift in Sources */,
 				883D5D811E8ABE4A009EC3D0 /* AppDelegate.swift in Sources */,

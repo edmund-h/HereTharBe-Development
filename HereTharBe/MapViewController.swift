@@ -13,13 +13,15 @@ import CoreLocation
 class MapViewController: UIViewController {
     lazy var mapContainer: MapView = MapView()
     weak var dataOptionsBar: UITabBar!
-    weak var centerMapButton: UIButton!
     
     override func loadView() {
         super.loadView()
         self.view = self.mapContainer
         self.mapContainer.mapView.delegate = self
         self.configureView()
+        let request = CoreLocManager.client.setDelegate(to: self)
+        request()
+        mapContainer.mapView.setUserTrackingMode(.follow, animated: true)
     }
     
     override func viewDidLoad() {
@@ -28,10 +30,8 @@ class MapViewController: UIViewController {
     }
 
     func configureView() {
-        mapContainer.buttons.forEach({$0.addTarget(self, action: #selector(self.getSearchBar), for: .touchUpInside) })
-//        addWarningButton = self.mapContainer.addWarningButton
-//        addWarningButton.addTarget(self, action: #selector(self.getSearchBar),   for: .touchUpInside)
-        
+        self.mapContainer.buttons.forEach({$0.addTarget(self, action: #selector(self.getSearchBar), for: .touchUpInside) })
+        self.mapContainer.centerMapButton.addTarget(self, action: #selector(self.centerMap), for: .touchUpInside)
         self.mapContainer.dataOptionsTab.addTarget(self, action: #selector(self.getDataOptions), for: .touchUpInside)
     }
     
@@ -47,14 +47,35 @@ class MapViewController: UIViewController {
     func getDataOptions(){
         self.mapContainer.slideOutOptionsBar()
     }
+    
+    func centerMap(sender: UIButton){
+        if let clLoc = CoreLocManager.client.getCurrentLoc() {
+            let center = clLoc.coordinate
+            let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+            let region = MKCoordinateRegion.init(center: center, span: span)
+            mapContainer.mapView.setRegion(region, animated: true)
+        }
+    }
 }
 
 extension MapViewController: MKMapViewDelegate {
     
 }
 
+extension MapViewController: CLLocationManagerDelegate{
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let clLoc = locations.last {
+            let center = clLoc.coordinate
+            let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+            let region = MKCoordinateRegion.init(center: center, span: span)
+            mapContainer.mapView.setRegion(region, animated: true)
+        }
+    }
+}
+
 extension MapViewController: UITabBarDelegate {
     
 }
+
 
 
