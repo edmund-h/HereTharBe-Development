@@ -19,8 +19,6 @@ class MapViewController: UIViewController {
         self.view = self.mapContainer
         self.mapContainer.mapView.delegate = self
         self.configureView()
-        let request = CoreLocManager.client.setDelegate(to: self)
-        request()
         mapContainer.mapView.setUserTrackingMode(.follow, animated: true)
     }
     
@@ -35,13 +33,10 @@ class MapViewController: UIViewController {
         self.mapContainer.dataOptionsTab.addTarget(self, action: #selector(self.getDataOptions), for: .touchUpInside)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func getSearchBar(sender: UIButton){
-        self.mapContainer.slideOutActiveBar(view: sender)
+    func getSearchBar(sender: MapSearchButton){
+        self.mapContainer.popOutSearchView()
+        self.mapContainer.searchView.setPurpose(to: sender.purpose)
+        self.mapContainer.searchView.searchBar.becomeFirstResponder()
     }
     
     func getDataOptions(){
@@ -49,7 +44,7 @@ class MapViewController: UIViewController {
     }
     
     func centerMap(sender: UIButton){
-        if let clLoc = CoreLocManager.client.getCurrentLoc() {
+        if let clLoc = CoreLocManager.getCurrentLoc() {
             let center = clLoc.coordinate
             let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
             let region = MKCoordinateRegion.init(center: center, span: span)

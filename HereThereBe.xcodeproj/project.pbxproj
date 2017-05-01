@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		883D5D811E8ABE4A009EC3D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5D801E8ABE4A009EC3D0 /* AppDelegate.swift */; };
-		883D5D831E8ABE4A009EC3D0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5D821E8ABE4A009EC3D0 /* MapViewController.swift */; };
-		883D5D861E8ABE4A009EC3D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883D5D841E8ABE4A009EC3D0 /* Main.storyboard */; };
-		883D5D881E8ABE4A009EC3D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883D5D871E8ABE4A009EC3D0 /* Assets.xcassets */; };
-		883D5D8B1E8ABE4A009EC3D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883D5D891E8ABE4A009EC3D0 /* LaunchScreen.storyboard */; };
+		882602351EAFB4DD00406596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826022A1EAFB4DD00406596 /* AppDelegate.swift */; };
+		882602361EAFB4DD00406596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8826022B1EAFB4DD00406596 /* Assets.xcassets */; };
+		882602371EAFB4DD00406596 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8826022C1EAFB4DD00406596 /* Base.lproj */; };
+		882602381EAFB4DD00406596 /* CoreLocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826022D1EAFB4DD00406596 /* CoreLocManager.swift */; };
+		882602391EAFB4DD00406596 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8826022E1EAFB4DD00406596 /* Info.plist */; };
+		8826023A1EAFB4DD00406596 /* MapSearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826022F1EAFB4DD00406596 /* MapSearchButton.swift */; };
+		8826023B1EAFB4DD00406596 /* MapSearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882602301EAFB4DD00406596 /* MapSearchDelegate.swift */; };
+		8826023C1EAFB4DD00406596 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882602311EAFB4DD00406596 /* MapView.swift */; };
+		8826023D1EAFB4DD00406596 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882602321EAFB4DD00406596 /* MapViewController.swift */; };
+		8826023E1EAFB4DD00406596 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882602331EAFB4DD00406596 /* SearchView.swift */; };
+		8826023F1EAFB4DD00406596 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882602341EAFB4DD00406596 /* Secrets.swift */; };
 		883D5D961E8ABE4A009EC3D0 /* HereTharBeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5D951E8ABE4A009EC3D0 /* HereTharBeTests.swift */; };
 		883D5DA11E8ABE4A009EC3D0 /* HereTharBeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5DA01E8ABE4A009EC3D0 /* HereTharBeUITests.swift */; };
-		883D5DAF1E8ADE70009EC3D0 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5DAE1E8ADE70009EC3D0 /* Secrets.swift */; };
-		887987DD1E93150600F5C540 /* CoreLocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887987DC1E93150600F5C540 /* CoreLocManager.swift */; };
-		88D3E8A31E8D54C80005D42F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3E8A21E8D54C80005D42F /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,22 +40,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		883D5D7D1E8ABE4A009EC3D0 /* HereTharBe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HereTharBe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		883D5D801E8ABE4A009EC3D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		883D5D821E8ABE4A009EC3D0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		883D5D851E8ABE4A009EC3D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		883D5D871E8ABE4A009EC3D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		883D5D8A1E8ABE4A009EC3D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		883D5D8C1E8ABE4A009EC3D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		883D5D911E8ABE4A009EC3D0 /* HereTharBeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HereTharBeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8826022A1EAFB4DD00406596 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = HereThereBe/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		8826022B1EAFB4DD00406596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = HereThereBe/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		8826022C1EAFB4DD00406596 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = HereThereBe/Base.lproj; sourceTree = SOURCE_ROOT; };
+		8826022D1EAFB4DD00406596 /* CoreLocManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreLocManager.swift; path = HereThereBe/CoreLocManager.swift; sourceTree = SOURCE_ROOT; };
+		8826022E1EAFB4DD00406596 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HereThereBe/Info.plist; sourceTree = SOURCE_ROOT; };
+		8826022F1EAFB4DD00406596 /* MapSearchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapSearchButton.swift; path = HereThereBe/MapSearchButton.swift; sourceTree = SOURCE_ROOT; };
+		882602301EAFB4DD00406596 /* MapSearchDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapSearchDelegate.swift; path = HereThereBe/MapSearchDelegate.swift; sourceTree = SOURCE_ROOT; };
+		882602311EAFB4DD00406596 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapView.swift; path = HereThereBe/MapView.swift; sourceTree = SOURCE_ROOT; };
+		882602321EAFB4DD00406596 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = HereThereBe/MapViewController.swift; sourceTree = SOURCE_ROOT; };
+		882602331EAFB4DD00406596 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchView.swift; path = HereThereBe/SearchView.swift; sourceTree = SOURCE_ROOT; };
+		882602341EAFB4DD00406596 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Secrets.swift; path = HereThereBe/Secrets.swift; sourceTree = SOURCE_ROOT; };
+		883D5D7D1E8ABE4A009EC3D0 /* HereThereBe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HereThereBe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		883D5D911E8ABE4A009EC3D0 /* HereThereBeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HereThereBeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		883D5D951E8ABE4A009EC3D0 /* HereTharBeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HereTharBeTests.swift; sourceTree = "<group>"; };
 		883D5D971E8ABE4A009EC3D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		883D5D9C1E8ABE4A009EC3D0 /* HereTharBeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HereTharBeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		883D5D9C1E8ABE4A009EC3D0 /* HereThereBeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HereThereBeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		883D5DA01E8ABE4A009EC3D0 /* HereTharBeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HereTharBeUITests.swift; sourceTree = "<group>"; };
 		883D5DA21E8ABE4A009EC3D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		883D5DAE1E8ADE70009EC3D0 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
-		887987DC1E93150600F5C540 /* CoreLocManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocManager.swift; sourceTree = "<group>"; };
-		88D3E8A21E8D54C80005D42F /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +88,9 @@
 		883D5D741E8ABE4A009EC3D0 = {
 			isa = PBXGroup;
 			children = (
-				883D5D7F1E8ABE4A009EC3D0 /* HereTharBe */,
-				883D5D941E8ABE4A009EC3D0 /* HereTharBeTests */,
-				883D5D9F1E8ABE4A009EC3D0 /* HereTharBeUITests */,
+				883D5D7F1E8ABE4A009EC3D0 /* HereThereBe */,
+				883D5D941E8ABE4A009EC3D0 /* HereThereBeTests */,
+				883D5D9F1E8ABE4A009EC3D0 /* HereThereBeUITests */,
 				883D5D7E1E8ABE4A009EC3D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,53 +98,66 @@
 		883D5D7E1E8ABE4A009EC3D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				883D5D7D1E8ABE4A009EC3D0 /* HereTharBe.app */,
-				883D5D911E8ABE4A009EC3D0 /* HereTharBeTests.xctest */,
-				883D5D9C1E8ABE4A009EC3D0 /* HereTharBeUITests.xctest */,
+				883D5D7D1E8ABE4A009EC3D0 /* HereThereBe.app */,
+				883D5D911E8ABE4A009EC3D0 /* HereThereBeTests.xctest */,
+				883D5D9C1E8ABE4A009EC3D0 /* HereThereBeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		883D5D7F1E8ABE4A009EC3D0 /* HereTharBe */ = {
+		883D5D7F1E8ABE4A009EC3D0 /* HereThereBe */ = {
 			isa = PBXGroup;
 			children = (
-				887987DC1E93150600F5C540 /* CoreLocManager.swift */,
-				883D5D801E8ABE4A009EC3D0 /* AppDelegate.swift */,
-				883D5D821E8ABE4A009EC3D0 /* MapViewController.swift */,
-				88D3E8A21E8D54C80005D42F /* MapView.swift */,
-				883D5D841E8ABE4A009EC3D0 /* Main.storyboard */,
-				883D5D871E8ABE4A009EC3D0 /* Assets.xcassets */,
-				883D5D891E8ABE4A009EC3D0 /* LaunchScreen.storyboard */,
-				883D5D8C1E8ABE4A009EC3D0 /* Info.plist */,
-				883D5DAE1E8ADE70009EC3D0 /* Secrets.swift */,
+				889C52A31E9D365300B4E550 /* Utilities */,
 			);
+			name = HereThereBe;
 			path = HereTharBe;
 			sourceTree = "<group>";
 		};
-		883D5D941E8ABE4A009EC3D0 /* HereTharBeTests */ = {
+		883D5D941E8ABE4A009EC3D0 /* HereThereBeTests */ = {
 			isa = PBXGroup;
 			children = (
 				883D5D951E8ABE4A009EC3D0 /* HereTharBeTests.swift */,
 				883D5D971E8ABE4A009EC3D0 /* Info.plist */,
 			);
+			name = HereThereBeTests;
 			path = HereTharBeTests;
 			sourceTree = "<group>";
 		};
-		883D5D9F1E8ABE4A009EC3D0 /* HereTharBeUITests */ = {
+		883D5D9F1E8ABE4A009EC3D0 /* HereThereBeUITests */ = {
 			isa = PBXGroup;
 			children = (
 				883D5DA01E8ABE4A009EC3D0 /* HereTharBeUITests.swift */,
 				883D5DA21E8ABE4A009EC3D0 /* Info.plist */,
 			);
+			name = HereThereBeUITests;
 			path = HereTharBeUITests;
+			sourceTree = "<group>";
+		};
+		889C52A31E9D365300B4E550 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8826022A1EAFB4DD00406596 /* AppDelegate.swift */,
+				8826022B1EAFB4DD00406596 /* Assets.xcassets */,
+				8826022C1EAFB4DD00406596 /* Base.lproj */,
+				8826022D1EAFB4DD00406596 /* CoreLocManager.swift */,
+				8826022E1EAFB4DD00406596 /* Info.plist */,
+				8826022F1EAFB4DD00406596 /* MapSearchButton.swift */,
+				882602301EAFB4DD00406596 /* MapSearchDelegate.swift */,
+				882602311EAFB4DD00406596 /* MapView.swift */,
+				882602321EAFB4DD00406596 /* MapViewController.swift */,
+				882602331EAFB4DD00406596 /* SearchView.swift */,
+				882602341EAFB4DD00406596 /* Secrets.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		883D5D7C1E8ABE4A009EC3D0 /* HereTharBe */ = {
+		883D5D7C1E8ABE4A009EC3D0 /* HereThereBe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 883D5DA51E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereTharBe" */;
+			buildConfigurationList = 883D5DA51E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereThereBe" */;
 			buildPhases = (
 				883D5D791E8ABE4A009EC3D0 /* Sources */,
 				883D5D7A1E8ABE4A009EC3D0 /* Frameworks */,
@@ -149,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = HereTharBe;
+			name = HereThereBe;
 			productName = HereTharBe;
-			productReference = 883D5D7D1E8ABE4A009EC3D0 /* HereTharBe.app */;
+			productReference = 883D5D7D1E8ABE4A009EC3D0 /* HereThereBe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		883D5D901E8ABE4A009EC3D0 /* HereTharBeTests */ = {
+		883D5D901E8ABE4A009EC3D0 /* HereThereBeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 883D5DA81E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereTharBeTests" */;
+			buildConfigurationList = 883D5DA81E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereThereBeTests" */;
 			buildPhases = (
 				883D5D8D1E8ABE4A009EC3D0 /* Sources */,
 				883D5D8E1E8ABE4A009EC3D0 /* Frameworks */,
@@ -167,14 +185,14 @@
 			dependencies = (
 				883D5D931E8ABE4A009EC3D0 /* PBXTargetDependency */,
 			);
-			name = HereTharBeTests;
+			name = HereThereBeTests;
 			productName = HereTharBeTests;
-			productReference = 883D5D911E8ABE4A009EC3D0 /* HereTharBeTests.xctest */;
+			productReference = 883D5D911E8ABE4A009EC3D0 /* HereThereBeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		883D5D9B1E8ABE4A009EC3D0 /* HereTharBeUITests */ = {
+		883D5D9B1E8ABE4A009EC3D0 /* HereThereBeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 883D5DAB1E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereTharBeUITests" */;
+			buildConfigurationList = 883D5DAB1E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereThereBeUITests" */;
 			buildPhases = (
 				883D5D981E8ABE4A009EC3D0 /* Sources */,
 				883D5D991E8ABE4A009EC3D0 /* Frameworks */,
@@ -185,9 +203,9 @@
 			dependencies = (
 				883D5D9E1E8ABE4A009EC3D0 /* PBXTargetDependency */,
 			);
-			name = HereTharBeUITests;
+			name = HereThereBeUITests;
 			productName = HereTharBeUITests;
-			productReference = 883D5D9C1E8ABE4A009EC3D0 /* HereTharBeUITests.xctest */;
+			productReference = 883D5D9C1E8ABE4A009EC3D0 /* HereThereBeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -219,7 +237,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 883D5D781E8ABE4A009EC3D0 /* Build configuration list for PBXProject "HereTharBe" */;
+			buildConfigurationList = 883D5D781E8ABE4A009EC3D0 /* Build configuration list for PBXProject "HereThereBe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -232,9 +250,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				883D5D7C1E8ABE4A009EC3D0 /* HereTharBe */,
-				883D5D901E8ABE4A009EC3D0 /* HereTharBeTests */,
-				883D5D9B1E8ABE4A009EC3D0 /* HereTharBeUITests */,
+				883D5D7C1E8ABE4A009EC3D0 /* HereThereBe */,
+				883D5D901E8ABE4A009EC3D0 /* HereThereBeTests */,
+				883D5D9B1E8ABE4A009EC3D0 /* HereThereBeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,9 +262,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883D5D8B1E8ABE4A009EC3D0 /* LaunchScreen.storyboard in Resources */,
-				883D5D881E8ABE4A009EC3D0 /* Assets.xcassets in Resources */,
-				883D5D861E8ABE4A009EC3D0 /* Main.storyboard in Resources */,
+				882602391EAFB4DD00406596 /* Info.plist in Resources */,
+				882602371EAFB4DD00406596 /* Base.lproj in Resources */,
+				882602361EAFB4DD00406596 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,11 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883D5D831E8ABE4A009EC3D0 /* MapViewController.swift in Sources */,
-				887987DD1E93150600F5C540 /* CoreLocManager.swift in Sources */,
-				883D5DAF1E8ADE70009EC3D0 /* Secrets.swift in Sources */,
-				88D3E8A31E8D54C80005D42F /* MapView.swift in Sources */,
-				883D5D811E8ABE4A009EC3D0 /* AppDelegate.swift in Sources */,
+				8826023F1EAFB4DD00406596 /* Secrets.swift in Sources */,
+				8826023B1EAFB4DD00406596 /* MapSearchDelegate.swift in Sources */,
+				882602381EAFB4DD00406596 /* CoreLocManager.swift in Sources */,
+				8826023C1EAFB4DD00406596 /* MapView.swift in Sources */,
+				882602351EAFB4DD00406596 /* AppDelegate.swift in Sources */,
+				8826023A1EAFB4DD00406596 /* MapSearchButton.swift in Sources */,
+				8826023E1EAFB4DD00406596 /* SearchView.swift in Sources */,
+				8826023D1EAFB4DD00406596 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,34 +321,15 @@
 /* Begin PBXTargetDependency section */
 		883D5D931E8ABE4A009EC3D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 883D5D7C1E8ABE4A009EC3D0 /* HereTharBe */;
+			target = 883D5D7C1E8ABE4A009EC3D0 /* HereThereBe */;
 			targetProxy = 883D5D921E8ABE4A009EC3D0 /* PBXContainerItemProxy */;
 		};
 		883D5D9E1E8ABE4A009EC3D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 883D5D7C1E8ABE4A009EC3D0 /* HereTharBe */;
+			target = 883D5D7C1E8ABE4A009EC3D0 /* HereThereBe */;
 			targetProxy = 883D5D9D1E8ABE4A009EC3D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		883D5D841E8ABE4A009EC3D0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				883D5D851E8ABE4A009EC3D0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		883D5D891E8ABE4A009EC3D0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				883D5D8A1E8ABE4A009EC3D0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		883D5DA31E8ABE4A009EC3D0 /* Debug */ = {
@@ -430,9 +432,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H7DR849HVE;
-				INFOPLIST_FILE = HereTharBe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HereThereBe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = bdl.HereTharBe;
+				PRODUCT_BUNDLE_IDENTIFIER = bdl.HereThereBe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -443,9 +445,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H7DR849HVE;
-				INFOPLIST_FILE = HereTharBe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HereThereBe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = bdl.HereTharBe;
+				PRODUCT_BUNDLE_IDENTIFIER = bdl.HereThereBe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -462,7 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bdl.HereTharBeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HereTharBe.app/HereTharBe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HereThereBe.app/HereThereBe";
 			};
 			name = Debug;
 		};
@@ -477,7 +479,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bdl.HereTharBeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HereTharBe.app/HereTharBe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HereThereBe.app/HereThereBe";
 			};
 			name = Release;
 		};
@@ -512,7 +514,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		883D5D781E8ABE4A009EC3D0 /* Build configuration list for PBXProject "HereTharBe" */ = {
+		883D5D781E8ABE4A009EC3D0 /* Build configuration list for PBXProject "HereThereBe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				883D5DA31E8ABE4A009EC3D0 /* Debug */,
@@ -521,7 +523,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		883D5DA51E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereTharBe" */ = {
+		883D5DA51E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereThereBe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				883D5DA61E8ABE4A009EC3D0 /* Debug */,
@@ -530,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		883D5DA81E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereTharBeTests" */ = {
+		883D5DA81E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereThereBeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				883D5DA91E8ABE4A009EC3D0 /* Debug */,
@@ -539,7 +541,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		883D5DAB1E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereTharBeUITests" */ = {
+		883D5DAB1E8ABE4A009EC3D0 /* Build configuration list for PBXNativeTarget "HereThereBeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				883D5DAC1E8ABE4A009EC3D0 /* Debug */,
